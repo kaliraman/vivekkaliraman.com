@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://vivekkaliraman.com/sitemap.xml
+Sitemap: https://www.vivekkaliraman.com/sitemap.xml
