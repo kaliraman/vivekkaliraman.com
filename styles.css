@@ -636,6 +636,9 @@ textarea.field { resize: vertical; line-height: 1.6; }
   .about .g-2,
   .form-row,
   .contact-grid { grid-template-columns: 1fr; }
+  /* Caringly is text-left/image-right on desktop; on mobile lead with the
+     image so it matches Perci and the project cards (image-on-top). */
+  .project.caringly .shot { order: -1; }
   .era { gap: 12px; padding-top: 26px; }
   .pub { grid-template-columns: 1fr; gap: 6px; }
   .pub-read { display: none; }
