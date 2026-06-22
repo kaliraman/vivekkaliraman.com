@@ -7,7 +7,7 @@
    and copy the access key into ACCESS_KEY.
    ============================================================ */
 
-const ACCESS_KEY = "YOUR_WEB3FORMS_ACCESS_KEY";
+const ACCESS_KEY = "b2c62e15-ec5e-4779-b647-2f21047ad57a";
 
 (function () {
   const form = document.getElementById("contact-form");
