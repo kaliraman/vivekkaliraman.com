@@ -25,9 +25,12 @@
 <body>
 
   <!-- ===== NAV ===== -->
-  <nav class="nav">
+  <nav class="nav" id="site-nav">
     <a href="#top" class="wordmark">vivek_kaliraman</a>
-    <div class="navlinks">
+    <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navlinks">
+      <span class="nav-toggle-bars" aria-hidden="true"></span>
+    </button>
+    <div class="navlinks" id="navlinks">
       <a href="#projects">Work</a>
       <a href="#building">Building</a>
       <a href="#journey">Journey</a>
@@ -437,6 +440,7 @@
     </div>
   </section>
 
+  <script src="nav.js"></script>
   <script src="form.js"></script>
 </body>
 </html>
