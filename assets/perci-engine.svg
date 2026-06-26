@@ -1,0 +1,30 @@
+<svg width="560" height="340" viewBox="0 0 560 340" role="img" xmlns="http://www.w3.org/2000/svg" font-family="'IBM Plex Sans', -apple-system, system-ui, sans-serif">
+<title>Perci Ready rules engine</title>
+<desc>Your inputs (home, people, local FEMA risk) flow into the rules engine, which scores each scenario by likelihood times severity times gap, and ranks the results into three tiers: Surviving, Getting through, and Bouncing back.</desc>
+<defs><marker id="pa" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L8 4L0 8z" fill="#b3bcc4"/></marker></defs>
+
+<rect x="24" y="124" width="148" height="92" rx="10" fill="#eef1f4" stroke="#dde3e9"/>
+<text x="98" y="160" font-size="14" font-weight="600" fill="#1a2129" text-anchor="middle">Your inputs</text>
+<text x="98" y="180" font-size="12" fill="#6c7783" text-anchor="middle">home · people</text>
+<text x="98" y="197" font-size="12" fill="#6c7783" text-anchor="middle">local FEMA risk</text>
+
+<line x1="172" y1="170" x2="196" y2="170" stroke="#b3bcc4" stroke-width="1.5" marker-end="url(#pa)"/>
+
+<rect x="200" y="104" width="160" height="132" rx="12" fill="#eaf4ef" stroke="#bfe0cf"/>
+<text x="280" y="156" font-size="16" font-weight="600" fill="#0f6e56" text-anchor="middle">Rules engine</text>
+<text x="280" y="180" font-size="12" fill="#4f7a6b" text-anchor="middle">Likelihood ×</text>
+<text x="280" y="197" font-size="12" fill="#4f7a6b" text-anchor="middle">Severity × Gap</text>
+
+<line x1="360" y1="170" x2="388" y2="170" stroke="#b3bcc4" stroke-width="1.5"/>
+<line x1="388" y1="110" x2="388" y2="230" stroke="#b3bcc4" stroke-width="1.5"/>
+<line x1="388" y1="110" x2="396" y2="110" stroke="#b3bcc4" stroke-width="1.5" marker-end="url(#pa)"/>
+<line x1="388" y1="170" x2="396" y2="170" stroke="#b3bcc4" stroke-width="1.5" marker-end="url(#pa)"/>
+<line x1="388" y1="230" x2="396" y2="230" stroke="#b3bcc4" stroke-width="1.5" marker-end="url(#pa)"/>
+
+<rect x="398" y="86" width="140" height="48" rx="9" fill="#fdeee6" stroke="#f3cdb8"/>
+<text x="468" y="115" font-size="13" font-weight="600" fill="#a8480c" text-anchor="middle">Surviving</text>
+<rect x="398" y="146" width="140" height="48" rx="9" fill="#eaf4ef" stroke="#bfe0cf"/>
+<text x="468" y="175" font-size="13" font-weight="600" fill="#0f6e56" text-anchor="middle">Getting through</text>
+<rect x="398" y="206" width="140" height="48" rx="9" fill="#f1f1ed" stroke="#ddd9d0"/>
+<text x="468" y="235" font-size="13" font-weight="600" fill="#5f5e5a" text-anchor="middle">Bouncing back</text>
+</svg>
