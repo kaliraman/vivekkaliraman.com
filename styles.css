@@ -320,6 +320,60 @@ input::placeholder, textarea::placeholder { color: #7f8b96; }
   max-width: 58ch;
   margin: 0 0 36px;
 }
+/* Featured build — flagship item above the grid */
+.feature-build {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  border: 1px solid var(--hairline);
+  border-radius: 3px;
+  overflow: hidden;
+  background: #fff;
+  margin-bottom: 24px;
+}
+.feature-build:hover { border-color: var(--accent); }
+.feature-hero {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  background: #eef4f8;
+  border-right: 1px solid var(--hairline);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 28px;
+  text-align: center;
+}
+.feature-hero-line {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+  max-width: 16ch;
+}
+.feature-hero-url { font-family: var(--mono); font-size: 13px; color: var(--accent); }
+.feature-hero-caption {
+  position: absolute;
+  bottom: 12px;
+  left: 14px;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: .08em;
+  color: var(--faint);
+}
+.feature-body {
+  padding: 28px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.feature-head { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.feature-title { font-size: 23px; font-weight: 600; }
+.feature-meta { font-family: var(--mono); font-size: 12px; color: var(--accent); }
+.feature-text { font-size: 15px; line-height: 1.7; color: var(--body); margin: 12px 0 0; }
+.feature-build .built-with { margin-top: 18px; }
+
 .g-3 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
 .build-card {
   border: 1px solid var(--hairline);
@@ -652,6 +706,7 @@ textarea.field { resize: vertical; line-height: 1.6; }
   .project.perci,
   .project.caringly,
   .small-cards,
+  .feature-build,
   .g-3,
   .era,
   .about .g-2,
@@ -660,6 +715,9 @@ textarea.field { resize: vertical; line-height: 1.6; }
   /* Caringly is text-left/image-right on desktop; on mobile lead with the
      image so it matches Perci and the project cards (image-on-top). */
   .project.caringly .shot { order: -1; }
+  /* Featured build: hero sits on top when stacked */
+  .feature-hero { border-right: none; border-bottom: 1px solid var(--hairline); aspect-ratio: 16 / 10; }
+  .feature-body { padding: 24px; }
   .era { gap: 12px; padding-top: 26px; }
   .pub { grid-template-columns: 1fr; gap: 6px; }
   .pub-read { display: none; }
