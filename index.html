@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <!-- ===== NAV ===== -->
   <nav class="nav" id="site-nav">
@@ -40,6 +41,7 @@
     </div>
   </nav>
 
+  <main id="main" tabindex="-1">
   <!-- ===== 01 HERO ===== -->
   <header id="top" class="hero">
     <div>
@@ -79,7 +81,7 @@
 
   <!-- ===== 02 WORK ===== -->
   <section id="projects" class="section band">
-    <div style="margin-bottom:14px;"><div class="eyebrow">02 / WORK</div></div>
+    <div style="margin-bottom:14px;"><h2 class="eyebrow">02 / WORK</h2></div>
     <p class="section-intro">The same problem, approached twice: the hospital handoff where most serious errors begin, and the workplace caught unready for disaster.</p>
 
     <!-- PERCI -->
@@ -150,7 +152,7 @@
   <!-- ===== 03 BUILDING NOW ===== -->
   <section id="building" class="section">
     <div class="building-head">
-      <div class="eyebrow">03 / BUILDING NOW</div>
+      <h2 class="eyebrow">03 / BUILDING NOW</h2>
       <div class="building-caption">A standing experiment.</div>
     </div>
     <p class="building-lead">Things I design and build with AI, shipped end to end.</p>
@@ -262,7 +264,7 @@
 
   <!-- ===== 04 JOURNEY ===== -->
   <section id="journey" class="section band">
-    <div style="margin-bottom:14px;"><div class="eyebrow">04 / JOURNEY</div></div>
+    <div style="margin-bottom:14px;"><h2 class="eyebrow">04 / JOURNEY</h2></div>
     <p class="section-intro">Two decades in reverse: founder, then digital-health product, then the medical-education and science foundation underneath it all.</p>
 
     <!-- ERA: FOUNDER -->
@@ -358,7 +360,7 @@
 
   <!-- ===== 05 WRITING & RESEARCH ===== -->
   <section id="writing" class="section">
-    <div class="eyebrow" style="display:block;margin-bottom:38px;">05 / WRITING &amp; RESEARCH</div>
+    <h2 class="eyebrow" style="display:block;margin-bottom:38px;">05 / WRITING &amp; RESEARCH</h2>
 
     <a href="https://link.springer.com/article/10.1186/s12912-025-03802-6" target="_blank" rel="noopener" class="pub">
       <div class="pub-year">2025</div>
@@ -476,11 +478,13 @@
         </div>
       </div>
     </div>
-    <div class="footer">
+    <footer class="footer">
       <span>VIVEK KALIRAMAN · PRODUCT · DIGITAL HEALTH · FOUNDER</span>
       <span>vivekkaliraman.com</span>
-    </div>
+    </footer>
   </section>
+
+  </main>
 
   <script src="nav.js"></script>
   <script src="form.js"></script>

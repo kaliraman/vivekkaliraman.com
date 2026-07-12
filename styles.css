@@ -48,6 +48,41 @@ a { color: inherit; text-decoration: none; }
 input, textarea, button { font-family: inherit; }
 input::placeholder, textarea::placeholder { color: #8a95a0; }
 
+/* Section-label headings render identically to the old eyebrow divs */
+h2.eyebrow { margin: 0; font-weight: 400; }
+#main:focus { outline: none; }
+
+/* Skip-to-content link — visible only when focused */
+.skip-link {
+  position: fixed;
+  left: 8px;
+  top: -56px;
+  z-index: 100;
+  background: var(--ink);
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 3px;
+  font-size: 14px;
+  transition: top .15s ease;
+}
+.skip-link:focus { top: 8px; }
+
+/* Visible keyboard focus (mouse users unaffected) */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+.contact a:focus-visible,
+.contact button:focus-visible,
+.contact input:focus-visible,
+.contact textarea:focus-visible {
+  outline-color: var(--contact-accent);
+}
+
 /* ---------- Section scaffolding ---------- */
 .section { padding: 90px 7vw; border-bottom: 1px solid var(--hairline); }
 .section.band { background: var(--section-tint); }
