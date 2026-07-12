@@ -8,6 +8,7 @@
   /* Color tokens */
   --bg: #f5f7f9;
   --bg-tint: #eef1f4;
+  --section-tint: #e9edf1;
   --ink: #1a2129;
   --body: #46525e;
   --muted: #6c7783;
@@ -48,7 +49,8 @@ input, textarea, button { font-family: inherit; }
 input::placeholder, textarea::placeholder { color: #7f8b96; }
 
 /* ---------- Section scaffolding ---------- */
-.section { padding: 70px 7vw; border-bottom: 1px solid var(--hairline); }
+.section { padding: 90px 7vw; border-bottom: 1px solid var(--hairline); }
+.section.band { background: var(--section-tint); }
 .eyebrow {
   font-family: var(--mono);
   font-size: 12px;
@@ -534,7 +536,7 @@ a.build-card:hover { border-color: var(--accent); }
 .pub:last-of-type { border-bottom: 1px solid var(--hairline); }
 
 /* ---------- About ---------- */
-.about { background: var(--bg-tint); }
+.about { background: var(--section-tint); }
 .about .g-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; }
 .about-pull {
   font-family: var(--serif);
