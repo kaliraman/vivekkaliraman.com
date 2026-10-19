@@ -426,6 +426,12 @@ a.build-card:hover { border-color: var(--accent); }
   background: var(--bg);
   border-bottom: 1px solid var(--hairline);
 }
+.build-hero.harkali {
+  background: #eef3f6;
+  border-bottom: 1px solid var(--hairline);
+  padding: 10px 14px;
+}
+.harkali-shot { width: 100%; height: 100%; object-fit: contain; display: block; }
 .arjuna-ring {
   width: 54px;
   height: 54px;
