@@ -139,6 +139,8 @@ textarea:focus-visible {
   justify-content: flex-end;
 }
 .navlinks a:hover { color: var(--ink); }
+.navlinks a.nav-ai { color: var(--accent); font-weight: 500; }
+.navlinks a.nav-ai:hover { color: var(--contact-accent); }
 
 /* Hamburger toggle — hidden on desktop, shown ≤860px */
 .nav-toggle {
@@ -399,6 +401,9 @@ a.build-card:hover { border-color: var(--accent); }
 }
 .build-hero.arjuna { background: #0b1f2a; }
 .arjuna-shot { width: 100%; height: 100%; object-fit: cover; display: block; }
+.build-hero.perci-rebuild { background: #0e2430; border-bottom: 1px solid var(--hairline); }
+.rebuild-word { font-size: 32px; font-weight: 700; color: #eaf2f6; letter-spacing: .01em; }
+.build-hero.perci-rebuild .build-hero-caption { color: #6f97ac; }
 .build-hero.progress {
   background: repeating-linear-gradient(135deg, #eef1f4 0 12px, #e6ebf0 12px 24px);
 }
